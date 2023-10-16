@@ -23,4 +23,11 @@ public class HomePage extends BasePage{
        click(loginLink);
         return new LoginPage(driver);
     }
+
+    @FindBy(xpath = "//a[@id='1']")
+    WebElement letTheCarWorkLink;
+    public LetTheCarWorkPage clickLetTheCarWorkLink() {
+        click(letTheCarWorkLink);
+        return new LetTheCarWorkPage(driver);
+    }
 }
